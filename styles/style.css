@@ -401,6 +401,14 @@ footer div {
   .about .about-content {
     padding-top: 10px;
   }
+  .contact .contact-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 5px;
+  }
+  .contact .contact-container .contact-info {
+    margin-top: 0;
+  }
 }
 @media only screen and (max-width: 700px) {
   .hero {
@@ -434,9 +442,6 @@ footer div {
   .testymonials .testymonials-container {
     margin: 27px auto;
     grid-template-columns: 1fr;
-  }
-  .contact .contact-container {
-    justify-content: space-around;
   }
   .contact .contact-container input {
     width: 300px;
@@ -478,14 +483,6 @@ footer div {
   }
   .testymonials .testymonials-container .grid-el {
     margin-bottom: 10px;
-  }
-  .contact .contact-container {
-    flex-direction: column-reverse;
-    align-items: center;
-    margin-top: 5px;
-  }
-  .contact .contact-container .contact-info {
-    margin-top: 0;
   }
   footer div {
     height: 50px;
