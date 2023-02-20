@@ -4,6 +4,7 @@ $color-main-heading: #828282;
 $color-main-text: #0d4d14;
 $color-btn-hero: #48924f;
 $color-btn: #6cb981;
+$color-btn-hover: #b9b86c;
 $color-input: #9fdea9;
 $color-bg-footer: #324b29;
 
@@ -16,6 +17,40 @@ body {
   padding: 21px 53px;
   border-radius: 35px;
 }
+
+// mixins
+@mixin btn-hover {
+  background: $color-btn-hover;
+  color: red;
+  font-weight: bold;
+  transform: scale(1.3);
+}
+@mixin container {
+  display: flex;
+  justify-content: center;
+}
+@mixin section-btn {
+  display: inline-block;
+  box-shadow: 0px 16px 30px rgba(50, 175, 100, 0.15);
+  color: $color-btn;
+  background-color: $color-light;
+  margin: 58px auto 10px;
+  text-decoration: none;
+}
+@mixin section-heading {
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 96px;
+  color: $color-main-heading;
+  text-align: center;
+  max-width: 16%;
+  margin: 0 auto;
+  margin-top: 69px;
+  padding-left: 4px;
+  text-transform: capitalize;
+}
+
+//sections
 .hero {
   background-image: url("../images/hero-background.png");
   color: $color-light;
@@ -71,33 +106,13 @@ body {
     color: $color-btn-hero;
     background: radial-gradient(50% 50% at 50% 50%, #ffffff 0%, #f9f9f9 100%);
     box-shadow: 0px 10px 50px rgba(16, 51, 30, 0.5);
-
     margin-top: 0;
   }
+  .btn:hover {
+    @include btn-hover();
+  }
 }
-@mixin section-heading {
-  font-weight: 800;
-  font-size: 64px;
-  line-height: 96px;
-  color: $color-main-heading;
-  text-align: center;
-  max-width: 16%;
-  margin: 0 auto;
-  margin-top: 69px;
-  padding-left: 4px;
-  text-transform: capitalize;
-}
-@mixin container {
-  display: flex;
-  justify-content: center;
-}
-@mixin section-btn {
-  display: inline-block;
-  box-shadow: 0px 16px 30px rgba(50, 175, 100, 0.15);
-  color: $color-btn;
-  background-color: $color-light;
-  margin: 58px auto 10px;
-}
+
 .services {
   text-align: center;
   h2 {
@@ -141,6 +156,9 @@ body {
   .btn {
     @include section-btn();
   }
+  .btn:hover {
+    @include btn-hover();
+  }
 }
 
 .about {
@@ -178,6 +196,9 @@ body {
     @include section-btn();
     margin-top: 17px;
     margin-bottom: 50px;
+  }
+  .btn:hover{
+    @include btn-hover();
   }
 }
 
@@ -263,6 +284,14 @@ body {
       margin: 0 auto;
       display: block;
       background-color: #fcfcfc;
+    }
+    input[type="submit"]:hover{
+      background-color: $color-btn-hero;
+      cursor: pointer;
+      color: $color-light;
+    }
+    input:focus{
+      border: 5px solid $color-main-text;
     }
     a,
     p {
