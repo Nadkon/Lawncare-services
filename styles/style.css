@@ -1,0 +1,310 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0 auto;
+  max-width: 1900px;
+}
+
+.btn {
+  padding: 21px 53px;
+  border-radius: 35px;
+}
+
+.hero {
+  background-image: url("../images/hero-background.png");
+  color: #ffffff;
+  text-align: center;
+  height: 840px;
+}
+.hero .header {
+  display: flex;
+  justify-content: center;
+  padding-left: 3px;
+}
+.hero .header h1 {
+  margin: 0;
+  font-weight: 800;
+  font-size: 60px;
+  padding-top: 48px;
+}
+.hero .header img {
+  padding-right: 15px;
+  width: 78px;
+  height: 84px;
+  padding-top: 64px;
+}
+.hero p {
+  margin-top: -28px;
+  font-size: 27px;
+  font-weight: 800;
+  letter-spacing: 0.26em;
+  padding-left: 105px;
+}
+.hero a {
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 59px;
+  padding: 19px 47px;
+  text-decoration: none;
+  margin-top: 17px;
+  display: inline-block;
+  margin-left: 4px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+.hero h2 {
+  font-weight: 900;
+  font-size: 144px;
+  line-height: 134px;
+  width: 74%;
+  margin-top: 18px;
+  margin-bottom: 100px;
+  padding-left: 211px;
+}
+.hero .btn {
+  color: #48924f;
+  background: radial-gradient(50% 50% at 50% 50%, #ffffff 0%, #f9f9f9 100%);
+  box-shadow: 0px 10px 50px rgba(16, 51, 30, 0.5);
+  margin-top: 0;
+}
+
+.services {
+  text-align: center;
+}
+.services h2 {
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 96px;
+  color: #828282;
+  text-align: center;
+  max-width: 16%;
+  margin: 0 auto;
+  margin-top: 69px;
+  padding-left: 4px;
+  text-transform: capitalize;
+}
+.services h2 img {
+  display: block;
+  text-align: center;
+  margin-top: -48px;
+}
+.services .card-container {
+  display: flex;
+  justify-content: center;
+}
+.services .card-container div {
+  color: #0d4d14;
+  max-width: 20%;
+  box-shadow: 0px 10px 30px rgba(16, 51, 30, 0.1);
+  border-radius: 30px;
+  margin: 10px;
+}
+.services .card-container div img {
+  width: 100%;
+}
+.services .card-container div h3 {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 29px;
+  padding-top: 21px;
+  margin: 0;
+  text-align: left;
+}
+.services .card-container div p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0 30px;
+  margin-top: 5px;
+  text-align: left;
+}
+.services .btn {
+  display: inline-block;
+  box-shadow: 0px 16px 30px rgba(50, 175, 100, 0.15);
+  color: #6cb981;
+  background-color: #ffffff;
+  margin: 58px auto 10px;
+}
+
+.about h2 {
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 96px;
+  color: #828282;
+  text-align: center;
+  max-width: 16%;
+  margin: 0 auto;
+  margin-top: 69px;
+  padding-left: 4px;
+  text-transform: capitalize;
+}
+.about h2 img {
+  display: block;
+  text-align: center;
+  margin-top: -48px;
+  margin-left: 250px;
+}
+.about .about-container {
+  text-align: center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(1098.jpg);
+  box-shadow: inset 0px 4px 50px rgba(0, 0, 0, 0.25);
+  background-image: url("../images/about-background.png");
+}
+.about .about-content {
+  display: flex;
+  justify-content: center;
+  padding-top: 140px;
+}
+.about .about-content p {
+  color: #ffffff;
+  max-width: 19%;
+  margin: 24px;
+  padding-left: 10px;
+  padding-right: 4px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+}
+.about .btn {
+  display: inline-block;
+  box-shadow: 0px 16px 30px rgba(50, 175, 100, 0.15);
+  color: #6cb981;
+  background-color: #ffffff;
+  margin: 58px auto 10px;
+  margin-top: 17px;
+  margin-bottom: 50px;
+}
+
+.testymonials {
+  text-align: center;
+}
+.testymonials h2 {
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 96px;
+  color: #828282;
+  text-align: center;
+  max-width: 16%;
+  margin: 0 auto;
+  margin-top: 69px;
+  padding-left: 4px;
+  text-transform: capitalize;
+  max-width: 24%;
+}
+.testymonials .testymonials-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  max-width: 64%;
+  margin: 65px auto;
+  margin-bottom: 40px;
+}
+.testymonials .testymonials-container .grid-el {
+  display: flex;
+  background: #ffffff;
+  border: 1px solid #6cb981;
+  border-radius: 40px;
+  margin-bottom: 56px;
+  margin-right: 24px;
+  margin-left: 23px;
+}
+.testymonials .testymonials-container .grid-el img {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin-top: 24px;
+  margin-left: 30px;
+}
+.testymonials .testymonials-container .grid-el div {
+  margin-bottom: 4px;
+}
+.testymonials .testymonials-container .grid-el div h3 {
+  color: #6cb981;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: left;
+  padding-top: 17px;
+  padding-left: 12px;
+}
+.testymonials .testymonials-container .grid-el div p {
+  color: #0d4c14;
+  font-size: 14px;
+  line-height: 22px;
+  padding-right: 31px;
+  padding-left: 12px;
+  margin-bottom: 0;
+  text-align: left;
+}
+.testymonials .testymonials-container .grid-el div .star {
+  margin-top: 0;
+  padding-bottom: 20px;
+}
+
+.contact h3 {
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 96px;
+  color: #828282;
+  text-align: center;
+  max-width: 16%;
+  margin: 0 auto;
+  margin-top: 69px;
+  padding-left: 4px;
+  text-transform: capitalize;
+  max-width: 22%;
+  margin-top: 40px;
+}
+.contact .contact-container {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  max-width: 50%;
+  margin: 66px auto 50px;
+}
+.contact .contact-container input {
+  border-radius: 61px;
+  background-color: #9fdea9;
+  width: 355px;
+  height: 33px;
+  margin-bottom: 14px;
+  padding: 10px;
+  font-size: 20px;
+  border-color: #4db96b;
+}
+.contact .contact-container input[type=submit] {
+  width: 166px;
+  height: 54px;
+  margin: 0 auto;
+  display: block;
+  background-color: #fcfcfc;
+}
+.contact .contact-container a,
+.contact .contact-container p {
+  font-size: 14px;
+  text-decoration: none;
+  color: #333333;
+}
+.contact .contact-container .contact-info {
+  margin-top: 27px;
+  margin-bottom: 17px;
+}
+.contact .contact-container .contact-info img {
+  margin-left: -12px;
+}
+.contact .contact-container .contact-info div {
+  margin-bottom: 20px;
+}
+.contact .contact-container .contact-info p {
+  margin: 0;
+  margin-left: -10px;
+}
+.contact .contact-container .contact-info p:before {
+  content: url("../images/adress.png");
+}
+
+footer div {
+  background-color: #324b29;
+  height: 145px;
+  margin: 0;
+}/*# sourceMappingURL=style.css.map */
